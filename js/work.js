@@ -6,7 +6,7 @@
       {
         name: 'ConnectOwls',
         picNum: 7,
-        imgUrlList: [
+        imgUrlList: [            //TODO  优化1： 预览图为大图，添加用于预览的缩略图，减少首页加载时间
           './styles/img/1/1.gif',
           './styles/img/1/2.gif',
           './styles/img/1/3.jpg',
@@ -105,7 +105,7 @@
     },
     nextWord: function(){
       if(this.index >= this.len){
-        console.error('超出作品数量');
+        // console.error('超出作品数量');
         return false;
       } else {
         this.index += 1;
@@ -116,7 +116,7 @@
     },
     PrevWord: function(){
       if(this.index <= 0 ){
-        console.error('没有index为0的作品');
+        // console.error('没有index为0的作品');
         return false;
       } else {
         this.index -= 1;
@@ -126,14 +126,14 @@
     },
     changeStatus: function(){
       if(this.index <= 0){
-        this.$prev.style.cursor = 'default';
-        this.$next.style.cursor = 'pointer';
+        this.$prev.className = 'prev';
+        this.$next.className = 'next is_act';
       } else if(this.index >= this.len){
-        this.$prev.style.cursor = 'pointer';
-        this.$next.style.cursor = 'default';
+        this.$prev.className = 'prev is_act';
+        this.$next.className = 'next';
       } else {
-        this.$prev.style.cursor = 'pointer';
-        this.$next.style.cursor = 'pointer';
+        this.$prev.className = 'prev is_act';
+        this.$next.className = 'next is_act';
       }
     }
   }
@@ -141,5 +141,4 @@
   var myTool = new Tool($workList, workListInfo);
   myTool.initCont();
   myTool.initNavi();
-  myTool.initPage(0);
 })()
