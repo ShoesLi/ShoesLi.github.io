@@ -10,18 +10,18 @@
     $closeBtn = document.getElementById('close_btn'),
     $img = document.getElementById('img');
 
-  $menu.addEventListener('click', function(){
+  $menu && $menu.addEventListener('click', function(){
     if($box.className.indexOf('show_box') !== -1){
       $box.className = 'mobild_navi_box';
     } else {
       $box.className = 'mobild_navi_box show_box';
     }
   });
-  $img.addEventListener('click',function(){
+  $img && $img.addEventListener('click',function(){
     $img_bask.style.display = 'block';
     $body.style.overflow = 'hidden';
   });
-  $closeBtn.addEventListener('click',function(){
+  $closeBtn && $closeBtn.addEventListener('click',function(){
     $img_bask.style.display = 'none';
     $body.style.overflow = 'auto';
   })
