@@ -59,9 +59,10 @@
 }
 
 .work_list .work_item .img_wrap{
+
   width:100%;
   padding-top: 75%;
-  background-position: center center;
+  background:#404040 center center;
   -webkit-background-size: cover;
   background-size: cover;
 }
