@@ -41,6 +41,10 @@
     cursor: pointer;
   }
 
+  .the_wrap .header{
+    margin-bottom: 0 !important;
+  }
+
   .the_wrap .header #logo {
     float: none !important;
   }
