@@ -77,8 +77,8 @@
       this.$back.addEventListener('click', function(e){
         that.$contWrap.style.display = 'none';
       })
-      this.$next.addEventListener('click', this.nextWord.bind(this));
-      this.$prev.addEventListener('click', this.PrevWord.bind(this));
+      this.$next.addEventListener('click', this.nextWork.bind(this));
+      this.$prev.addEventListener('click', this.PrevWork.bind(this));
       var items = document.getElementsByClassName('work_item');
       for(var i = 0, len = items.length; i < len; i ++){
         (function(i){
@@ -103,7 +103,7 @@
       window.scrollTo(0,0);
       this.changeStatus();
     },
-    nextWord: function(){
+    nextWork: function(){
       if(this.index >= this.len){
         // console.error('超出作品数量');
         return false;
@@ -114,7 +114,7 @@
       }
 
     },
-    PrevWord: function(){
+    PrevWork: function(){
       if(this.index <= 0 ){
         // console.error('没有index为0的作品');
         return false;
