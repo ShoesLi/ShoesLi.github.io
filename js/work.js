@@ -1,48 +1,23 @@
 /**
  * Created by cyb on 2018/5/12.
  */
-(function(){
-  var workListInfo = [
-      {
-        name: 'ConnectOwls',
-        picNum: 7,
-        imgUrlList: [            //TODO  优化1： 预览图为大图，添加用于预览的缩略图，减少首页加载时间
-          './styles/img/1/1.gif',
-          './styles/img/1/2.gif',
-          './styles/img/1/3.jpg',
-          './styles/img/1/4.jpg',
-          './styles/img/1/5.jpg',
-          './styles/img/1/6.jpg',
-          './styles/img/1/7.jpg'
-        ],
-        workInfo: 'Branding design for Éclavour Skincare Cosmetic.'
-      },
-      {
-        name: 'ConnectOwls',
-        picNum: 7,
-        imgUrlList: [
-          './styles/img/2/1.jpg'
-        ],
-        workInfo: 'Branding design for Éclavour Skincare Cosmetic.'
-      },
-      {
-        name: 'ConnectOwls',
-        picNum: 7,
-        imgUrlList: [
-          './styles/img/1/1.gif'
-        ],
-        workInfo: 'Branding design for Éclavour Skincare Cosmetic.'
-      },
-      {
-        name: 'ConnectOwls',
-        picNum: 7,
-        imgUrlList: [
-          './styles/img/1/1.gif'
-        ],
-        workInfo: 'Branding design for Éclavour Skincare Cosmetic.'
-      }
-    ],
+
+$.ajax({
+  dataType: "json",
+  url: '../shoes/outpu.json',
+  data: {},
+  success: function(data){
+    infos = data;
+    console.log(infos);
+    handleJSON();
+  }
+});
+
+function handleJSON(){
+  var workListInfo = infos,
     $workList = document.getElementById('work_list');
+
+
 
   var Tool = function(targetDom, list){
     this.list = list || [];
@@ -92,7 +67,7 @@
       this.index = num;
       var pageCont = '';
       var imgList = '';
-      var info = '<h2 class="info_title">' + this.list[num].name.toUpperCase() + '</h2><div class="work_description"><p>' + this.list[num].workInfo + '</p> </div>'
+      var info = '<h2 class="info_title">' + this.list[num].name.toUpperCase() + '</h2><div class="work_description"><p>' + this.list[num].des + '</p> </div>'
       Array.isArray(this.list[num].imgUrlList) && this.list[num].imgUrlList.map(function(item, index){
         var frag = '<li><img src="' + item + '" alt=""/></li>';
         imgList += frag;
@@ -141,4 +116,4 @@
   var myTool = new Tool($workList, workListInfo);
   myTool.initCont();
   myTool.initNavi();
-})()
+}
