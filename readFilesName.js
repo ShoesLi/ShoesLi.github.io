@@ -50,7 +50,6 @@ folderName.map(function(item, index){
   });
 });
 
-console.log(imgNamesList);
 writeStream.write(JSON.stringify(imgNamesList), 'utf-8');
 writeStream.end();
 
