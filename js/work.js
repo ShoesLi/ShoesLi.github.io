@@ -8,12 +8,11 @@ $.ajax({
   data: {},
   success: function(data){
     infos = data;
-    console.log(infos);
-    handleJSON();
+    handlePage();
   }
 });
 
-function handleJSON(){
+function handlePage(){
   var workListInfo = infos,
     $workList = document.getElementById('work_list');
 
