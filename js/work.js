@@ -7,7 +7,6 @@ $.ajax({
   url: '../ShoesLi.github.io/outpu.json',
   data: {},
   success: function(data){
-    console.log(data);
     infos = data;
     handlePage();
   }
