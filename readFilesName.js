@@ -55,8 +55,8 @@ folderName.map(function(item, index){
   imgNamesList.push({
     imgUrlList:imgNames,
     picNum:imgNames.length,
-    name: workInfo[0].name,
-    des: workInfo[0].des
+    name: workInfo[0] ? workInfo[0].name : '',
+    des: workInfo[0] ? workInfo[0].des : ''
   });
 });
 

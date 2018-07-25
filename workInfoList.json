@@ -1,89 +1,94 @@
 {
   "workInfoList": [
     {
+      "index": 18,
+      "name": "FiMAX",
+      "des": "Logo and Branding design for FiMAX®"
+    },
+    {
       "index": 17,
       "name": "PABI",
-      "des": ""
+      "des": "Logo and Branding design for PingAn Blockchain Institute©"
     },
     {
       "index": 16,
-      "name": "connectowls",
-      "des": ""
+      "name": "CONNECTOWLS",
+      "des": "UI and Character design for ConnectOwls. It is an App that can collect and breed digital owls. Each owl has 8 randomly-combined attributes. So that each Owl is unique and 100% owned by you. It cannot be copied, taken away, or destroyed."
     },
     {
       "index": 15,
-      "name": "ECLAVOUR",
-      "des": ""
+      "name": "ÉCLAVOUR",
+      "des": "Branding design for Éclavour Skincare Cosmetic."
     },
     {
       "index": 14,
       "name": "SKINMATTERS",
-      "des": ""
+      "des": "Packaging design for SkinMatters®. The key visual is about the texture of sand dune and the shape of water. The design can fit all types of the Products."
     },
     {
       "index": 13,
       "name": "HAPPY NEW YEAR",
-      "des": ""
+      "des": "MG animation design for new year. Hope you all happy new year!"
     },
     {
       "index": 12,
       "name": "GAMMALAB",
-      "des": ""
+      "des": "Branding design for GammaLab."
     },
     {
       "index": 11,
       "name": "FUER",
-      "des": ""
+      "des": "Branding design for FUER ( Fintech Users Experience & Research ).FUER is a company which supply solutions for fintech UE. “F“ and “E“ like two rules which redefine the market."
     },
     {
       "index": 10,
       "name": "KIDSCHIC",
-      "des": ""
+      "des": "Logo design for KIDSCHIC®. It is a kids’ barber shop also sells all kinds of children’s stuff."
     },
     {
       "index": 9,
       "name": "GAMMAFACE",
-      "des": ""
+      "des": "UI design for Gammaface loan device. It can provide abundant money for users to borrow from as long as they can pass some quick online tests. "
     },
     {
       "index": 8,
       "name": "智能闪赔",
-      "des": ""
+      "des": "Branding and UI design for Zhinengshanpei."
     },
     {
       "index": 7,
       "name": "FLAMEROYAL",
-      "des": ""
+      "des": "Trade Mark design for Flame Royal®, a wine which can improve men’s physical fitness."
     },
     {
       "index": 6,
       "name": "ONE CONNECT",
-      "des": ""
+      "des": "Logo and Branding design for OneConnect®. It is an innovative fintech and internet company."
     },
     {
       "index": 5,
       "name": "TRT",
-      "des": ""
+      "des": "Packaging design for TRT® (Tongrentang), this project is about chinese herbal medicine like Matsutake and Tianma.Designed two types of packaging, white regular and navy gift."
     },
     {
       "index": 4,
       "name": "ONECHAIN",
-      "des": ""
+      "des": "Web and Logo design for One Chain®. It is a block chain platform that can serve SMEs."
     },
     {
       "index": 3,
       "name": "SOCIAL INSURANCE WALLET",
-      "des": ""
+      "des": "UI and icon design for Social Insurance Wallet."
     },
     {
       "index": 2,
       "name": "FINANCE UI LIBRARY",
-      "des": ""
+      "des": "Here is some UI demo."
     },
     {
       "index": 1,
       "name": "SHOESHOUSE",
-      "des": ""
+      "des": "My home. Yes, of course it is one of my favourite projects!"
     }
   ]
 }
