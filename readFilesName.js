@@ -29,7 +29,17 @@ folderName = folderName.filter(function(item){
     return false;
   }
 });
-folderName.sort(compare);
+folderName.sort((a, b) => {
+  a.replace(/\.(jpe?g || png || gif || svg)$/g, '');
+  b.replace(/\.(jpe?g || png || gif || svg)$/g, '');
+  if(parseInt(a) < parseInt(b)){
+    return 1;
+  } else if(parseInt(a) > parseInt(b)){
+    return -1;
+  } else {
+    return 0;
+  }
+});
 folderName.map(function(item, index){
   var imgNames = fs.readdirSync('./styles/img/' + item, 'utf-8');
   imgNames = imgNames.filter(function(item){
