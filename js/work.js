@@ -4,7 +4,7 @@
 
 $.ajax({
   dataType: "json",
-  url: '../ShoesLi.github.io/outpu.json',
+  url: '../outpu.json',
   data: {},
   success: function(data){
     infos = data;
